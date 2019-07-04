@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -10,8 +10,8 @@
 		<title>Célula IOT</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{% static "assets/css/main.css" %}"/>
+		<noscript><link rel="stylesheet" href="{% static "assets/css/noscript.css" %}"/></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -39,7 +39,7 @@
 							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
 							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#one" class="button scrolly">Saiba mais</a></li>
 							</ul>
 						</div>
 					</section>
@@ -47,37 +47,37 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="static/images/arduino.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Sed ipsum dolor</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="static/images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Feugiat consequat</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="static/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Ultricies aliquam</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -122,7 +122,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
+								<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
@@ -200,13 +200,13 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="static/assets/js/jquery.min.js"></script>
-			<script src="static/assets/js/jquery.scrollex.min.js"></script>
-			<script src="static/assets/js/jquery.scrolly.min.js"></script>
-			<script src="static/assets/js/browser.min.js"></script>
-			<script src="static/assets/js/breakpoints.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<script src="static/assets/js/main.js"></script>
+			<script src="{% static "assets/js/jquery.min.js" %}"></script>
+			<script src="{% static "assets/js/jquery.scrollex.min.js"%}"></script>
+			<script src="{% static "assets/js/jquery.scrolly.min.js"%}"></script>
+			<script src="{% static "assets/js/browser.min.js"%}"></script>
+			<script src="{% static "assets/js/breakpoints.min.js"%}"></script>
+			<script src="{% static "assets/js/util.js"%}"></script>
+			<script src="{% static "assets/js/main.js"%}"></script>
 
 	</body>
 </html>

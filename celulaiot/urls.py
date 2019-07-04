@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('noticias/', include('noticias.urls')),
     path('', include('noticias.urls')),
+    path('generic',include('noticias.urls')),
 ]
