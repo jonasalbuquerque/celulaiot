@@ -25,7 +25,7 @@ SECRET_KEY = 'q9f)!l+($u@$_86g51_s1!uo&w9m3=v@zyiu09l8zd%=i!sxww'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','celulaiot.herokuapp.com']
+ALLOWED_HOSTS = ['celulaiot.herokuapp.com']
 
 
 # Application definition
