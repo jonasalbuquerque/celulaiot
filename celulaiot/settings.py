@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q9f)!l+($u@$_86g51_s1!uo&w9m3=v@zyiu09l8zd%=i!sxww'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['celulaiot.herokuapp.com']
 
@@ -131,6 +131,10 @@ STATICFILES_DIRS = (
 )
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 import dj_database_url 
 prod_db  =  dj_database_url.config(conn_max_age=500)
