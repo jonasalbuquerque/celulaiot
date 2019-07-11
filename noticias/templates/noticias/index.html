@@ -10,7 +10,9 @@
 		<title>Célula IOT</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="{% static "images/favicon.ico" %}" />
 		<link rel="stylesheet" href="{% static "assets/css/main.css" %}"/>
+		<link rel="stylesheet" href="{% static "assets/css/style.css" %}"/>
 		<noscript><link rel="stylesheet" href="{% static "assets/css/noscript.css" %}"/></noscript>
 	</head>
 	<body class="is-preload">
@@ -22,7 +24,7 @@
 						<ul>
 							<li><a href="#intro">Início</a></li>
 							<li><a href="#one">Quem somos</a></li>
-							<li><a href="#two">Sobre</a></li>
+							<li><a href="#two">O que fazemos</a></li>
 							<li><a href="#three">Contato</a></li>
 						</ul>
 					</nav>
@@ -35,9 +37,10 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Célula IoT</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<h1>Bem-vindo à Célula de IoT</h1>
+							<p>Navegue pelo site e conheça nosso projeto.</p>
+							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
+							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p> -->
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Saiba mais</a></li>
 							</ul>
@@ -46,11 +49,15 @@
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
+						<!--<div class="inner">
+							<h2>What we do</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+						</div>-->
 						<section>
 							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
+									<h2>Apresentação</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
@@ -59,10 +66,10 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="{% static "images/harrison-broadbent-7Ja4Pwtg69U-unsplash.jpg" %}" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Feugiat consequat</h2>
+									<h2>Cursos</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
@@ -71,10 +78,10 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="{% static "images/niclas-illg-PlGxLYGhIDg-unsplash.jpg" %}" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
+									<h2>Projetos</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
@@ -130,14 +137,14 @@
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>Entre em contato conosco</h2>
+							<p>Quer saber mais sobre nós? Entre em contato através de nosso e-mail ou nosso telefone.<br /> Se preferir, deixe-nos uma mensagem que teremos o prazer em responder o mais breve possível.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
+												<label for="name">Nome</label>
 												<input type="text" name="name" id="name" />
 											</div>
 											<div class="field half">
@@ -145,19 +152,19 @@
 												<input type="text" name="email" id="email" />
 											</div>
 											<div class="field">
-												<label for="message">Message</label>
+												<label for="message">Mensagem</label>
 												<textarea name="message" id="message" rows="5"></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a href="" class="button submit">Enviar mensagem</a></li>
 										</ul>
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Address</h3>
+											<h3>Endereço</h3>
 											<span>12345 Somewhere Road #654<br />
 											Nashville, TN 00000-0000<br />
 											USA</span>
@@ -167,7 +174,7 @@
 											<a href="#">user@untitled.tld</a>
 										</li>
 										<li>
-											<h3>Phone</h3>
+											<h3>Telefone</h3>
 											<span>(000) 000-0000</span>
 										</li>
 										<li>
@@ -191,10 +198,21 @@
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
+					<div class="row">
+						<div class="column">
+    						<img src="{% static "images/logo-facebook.png" %}" style="width: 50%"/>
+  						</div>
+				  		<div class="column">
+				    		<img src="{% static "images/LOGO-DETI.png" %}" style="width: 80%"/>	
+				  		</div>
+						<div class="column">
+						    <img src="{% static "images/logo_ufc.png" %}" style="width: 100%"/>
+						</div>
+					</div>
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li>
-						<li>Images: <a href="http://unsplash.com/">Unsplash</a></li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Célula IoT. Todos os direitos reservados.</li>
+						<li>Imagens: <a href="http://unsplash.com/">Unsplash</a></li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a> / Licenciado sob <a href="http://html5up.net/license">Creative Commons</a>.</li>
 					</ul>
 				</div>
 			</footer>
