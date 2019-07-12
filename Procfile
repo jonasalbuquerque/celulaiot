@@ -1,1 +1,1 @@
-web: gunicorn celulaiot.wsgi 
+web: gunicorn celulaiot.wsgi
