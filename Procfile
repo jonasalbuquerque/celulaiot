@@ -1,1 +1,1 @@
-web: gunicorn celulaiot.wsgi --log-file -
+web: gunicorn celulaiot.wsgi 
