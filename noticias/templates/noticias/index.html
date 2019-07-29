@@ -36,31 +36,27 @@
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Bem-vindo à Célula de IoT</h1>
+						<!-- particles.js container --> 
+						<div id="particles-js"></div> 
+						<div id="home-title" class="inner">
+							<h1>Célula de Internet das Coisas</h1>
 							<p>Navegue pelo site e conheça nosso projeto.</p>
-							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p> -->
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Saiba mais</a></li>
-							</ul>
 						</div>
+						<ul class="actions">
+							<li id="scroll-li"><a href="#one" class="scroll-down scrolly"></a></li>
+						</ul>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
-						<!--<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-						</div>-->
 						<section>
 							<a href="#" class="image"><img src="{% static "images/arduino.jpg" %}" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Apresentação</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p>O projeto de extensão denominado “Célula de Internet das Coisas”, da Universidade Federal do Ceará, propõe a formação de alunos no desenvolvimento de sistemas embarcados voltados para Internet das coisas, visando multiplicar esse conhecimento para outros alunos dos cursos de graduação de diferentes instituições de ensino superior do Ceará.</p>
 									<ul class="actions">
-										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
+										<li><a href="/apresentacao" class="button">Saiba mais</a></li>
 									</ul>
 								</div>
 							</div>
@@ -70,9 +66,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Cursos</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p>Oferecemos formação e capacitação aos alunos de instituições de ensino do Ceará para o mercado de tecnologia na área de desenvolvimento de sistemas embarcados voltados para Internet das Coisas.</p>
 									<ul class="actions">
-										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
+										<li><a href="/cursos" class="button">Saiba mais</a></li>
 									</ul>
 								</div>
 							</div>
@@ -82,9 +78,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Projetos</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p>Temos como foco o fomento à inovação no desenvolvimento de sistemas embarcados na região, desenvolvendo práticas de sistemas embarcados e implementando componentes de software para necessidades reais de instituições em Fortaleza.</p>
 									<ul class="actions">
-										<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
+										<li><a href="/projetos" class="button">Saiba mais</a></li>
 									</ul>
 								</div>
 							</div>
@@ -94,18 +90,18 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>O que fazemos</h2>
+							<p>Somos uma equipe preparada e treinada para projetos em sistemas embarcados IoT. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Técnicas de programação</h3>
+									<p>Consultoria e treinamento em técnicas de programação relacionados a componentes e sistemas de IoT.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Viabilidade de projeto</h3>
+									<p>Assessoria na viabilidade e gerência de projetos com uso de plataformas atuais e satisfatórias de desenvolvimento.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-cog"></span>
@@ -129,7 +125,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="{% url 'generic' %}" class="button">Learn more</a></li>
+								<li><a href="/projetos" class="button">Saiba mais</a></li>
 							</ul>
 						</div>
 					</section>
@@ -138,7 +134,7 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Entre em contato conosco</h2>
-							<p>Quer saber mais sobre nós? Entre em contato através de nosso e-mail ou nosso telefone.<br /> Se preferir, deixe-nos uma mensagem que teremos o prazer em responder o mais breve possível.</p>
+							<p>Quer saber mais sobre nós? Entre em contato através de nosso e-mail ou telefone.<br /> Se preferir, deixe-nos uma mensagem que responderemos o mais breve possível.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -165,13 +161,13 @@
 									<ul class="contact">
 										<li>
 											<h3>Endereço</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+											<span>Campus do Pici - Bloco 725<br />
+											Fortaleza-CE, <br />CEP 60455-970<br />
+											BRA</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="#">celulaiot@ufc.br</a>
 										</li>
 										<li>
 											<h3>Telefone</h3>
@@ -199,13 +195,13 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<div class="row">
-						<div class="column">
-    						<img src="{% static "images/logo-facebook.png" %}" style="width: 50%"/>
+						<div class="col-4">
+    						<img src="{% static "images/logo-celula.png" %}" style="width: 50%"/>
   						</div>
-				  		<div class="column">
+				  		<div class="col-4">
 				    		<img src="{% static "images/LOGO-DETI.png" %}" style="width: 80%"/>	
 				  		</div>
-						<div class="column">
+						<div class="col-4">
 						    <img src="{% static "images/logo_ufc.png" %}" style="width: 100%"/>
 						</div>
 					</div>
@@ -218,6 +214,9 @@
 			</footer>
 
 		<!-- Scripts -->
+			<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+			<script src="{% static "assets/js/particles.js" %}"></script> 
+			<script src="{% static "assets/js/app.js" %}"></script>
 			<script src="{% static "assets/js/jquery.min.js" %}"></script>
 			<script src="{% static "assets/js/jquery.scrollex.min.js"%}"></script>
 			<script src="{% static "assets/js/jquery.scrolly.min.js"%}"></script>
@@ -225,6 +224,5 @@
 			<script src="{% static "assets/js/breakpoints.min.js"%}"></script>
 			<script src="{% static "assets/js/util.js"%}"></script>
 			<script src="{% static "assets/js/main.js"%}"></script>
-
 	</body>
 </html>

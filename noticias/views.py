@@ -6,5 +6,11 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'noticias/index.html', {})
 
-def generic(request):
-	return render(request, 'noticias/generic.html', {})
+def apresentacao(request):
+	return render(request, 'noticias/apresentacao.html', {})
+
+def cursos(request):
+	return render(request, 'noticias/cursos.html', {})
+
+def projetos(request):
+	return render(request, 'noticias/projetos.html', {})
