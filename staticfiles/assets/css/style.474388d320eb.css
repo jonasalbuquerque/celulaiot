@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+#particles-js {
+	z-index: 999;
+}
+#home-title {
+	position: absolute;
+} 
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+  bottom: 30px;
+  left: 50%;
+  margin: 0px auto;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(255,255,255,0.8);
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:hover {
+  background-color: rgba(255,255,255,1.0);
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid #19234a;
+    border-width: 0px 0 3px 3px;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+#scroll-li {
+	margin: 0px auto;
+}
+#home-title h1{
+	font-family: 'Muli', sans-serif;
+}
