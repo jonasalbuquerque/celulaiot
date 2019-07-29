@@ -28,13 +28,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 #DEBUG = True
 
-ALLOWED_HOSTS = ['celulaiot.herokuapp.com']
+ALLOWED_HOSTS = ['celulaiot.herokuapp.com','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    #'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
