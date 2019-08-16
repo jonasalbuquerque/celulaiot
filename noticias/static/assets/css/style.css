@@ -82,3 +82,24 @@
     }
 
   }
+#team img{
+  width: 100px;
+}
+#div-coord{
+  text-align: center;
+}
+#team p{
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+#team .col-4{
+  text-align: center;
+}
+#team .row{
+  padding-bottom: 2em;
+}
+
+#footer .row{
+  padding-bottom: 2em;
+}

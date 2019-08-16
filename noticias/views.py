@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
+from .forms import MessageForm
+
 
 def index(request):
     return render(request, 'noticias/index.html', {})

@@ -25,7 +25,8 @@
 							<li><a href="#intro">Início</a></li>
 							<li><a href="#one">Quem somos</a></li>
 							<li><a href="#two">O que fazemos</a></li>
-							<li><a href="#three">Contato</a></li>
+							<li><a href="#three">Membros</a></li>
+							<li><a href="#four">Contato</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -104,7 +105,7 @@
 								<section>
 									<span class="icon solid major fa-lock"></span>
 									<h3>Viabilidade de projeto</h3>
-									<p>Assessoria na viabilidade e gerência de projetos com uso de plataformas atuais e satisfatórias de desenvolvimento.</p>
+									<p>Assessoria na viabilidade e gerência de projetos com uso de frameworks atuais de desenvolvimento.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-cog"></span>
@@ -134,13 +135,68 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="three" class="wrapper style1-alt fade-up">
+						<div class="inner">
+							<h2>Nosso time</h2>
+							<!-- Team -->
+							<section id="team">
+						      <div class="container">
+						        <div class="row">
+						          <div id="div-coord" class="col-12 ">
+						            <img src="{% static "images/guest-512.png" %}">
+						            <p><b>Atslands Rocha</b></p>
+						            <p>Coordenadora</p>
+						          </div>
+						        </div>
+
+						        <div class="row">
+						          <div class="col-4 col-6-medium col-12-small">
+						            <img src="{% static "images/guest-512.png" %}">
+						            <p><b>Membro 1</b></p>
+						            <p>Bolsista Voluntário</p>
+						          </div>
+						          <div class="col-4 col-6-medium col-12-small">
+						            <img src="{% static "images/guest-512.png" %}">
+						            <p><b>Membro 2</b></p>
+						            <p>Bolsista Voluntário</p>
+						          </div>
+						          <div class="col-4 col-6-medium col-12-small">
+						           	<img src="{% static "images/guest-512.png" %}">
+						            <p><b>Membro 3</b></p>
+						            <p>Bolsista Voluntário</p>
+						          </div>
+						        </div>
+						        <div class="row">
+						          <div class="col-4 col-6-medium col-12-small">
+						            <img src="{% static "images/guest-512.png" %}">
+						            <p><b>Membro 4</b></p>
+						            <p>Bolsista Voluntário</p>
+						          </div>
+						          <div class="col-4 col-6-medium col-12-small">
+						            <img src="{% static "images/guest-512.png" %}">
+						            <p><b>Membro 5</b></p>
+						            <p>Bolsista Voluntário</p>
+						          </div>
+						          <div class="col-4 col-6-medium col-12-small">
+						           	<img src="{% static "images/guest-512.png" %}">
+						            <p><b>Membro 6</b></p>
+						            <p>Bolsista Voluntário</p>
+						          </div>
+						        </div>
+						      </div>
+						    </section>
+						</div>
+					</section>
+				<!-- Four -->
+					<section id="four" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Entre em contato conosco</h2>
 							<p>Quer saber mais sobre nós? Entre em contato através de nosso e-mail ou telefone.<br /> Se preferir, deixe-nos uma mensagem que responderemos o mais breve possível.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="">
+										{% csrf_token %}
+    									{{ form }}
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Nome</label>
@@ -198,13 +254,13 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<div class="row">
-						<div class="col-4">
+						<div class="col-4 col-12-small">
     						<img src="{% static "images/logo-white-compact.svg" %}" style="width: 50%"/>
   						</div>
-				  		<div class="col-4">
-				    		<img src="{% static "images/LOGO-DETI.png" %}" style="width: 80%"/>	
+				  		<div class="col-4 col-12-small">
+				    		<img src="{% static "images/LOGO-DETI.png" %}" style="width: 70%"/>	
 				  		</div>
-						<div class="col-4">
+						<div class="col-4 col-12-small">
 						    <img src="{% static "images/logo_ufc.png" %}" style="width: 100%"/>
 						</div>
 					</div>
