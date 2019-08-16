@@ -68,6 +68,12 @@
 #home-title h1{
 	font-family: 'Muli', sans-serif;
 }
+#home-title img{
+  width: 70%;
+}
+#home-title {
+  text-align: center;
+}
 
 @media screen and (max-width: 480px) {
 
