@@ -10,14 +10,16 @@
 		<title>Cursos - Célula IoT</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="{% static "images/favicon.ico" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/main.css" %}"/>
+		<link rel="stylesheet" href="{% static "assets/css/style.css" %}"/>
+		<noscript><link rel="stylesheet" href="{% static "assets/css/noscript.css" %}"/></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="/" class="title">[LOGO] Célula de Internet das Coisas</a>
+				<a href="/" class="title"><img src="{% static "images/logo-color-white.svg" %}" style="width: 18%; position: absolute;"></a>
 				<nav>
 					<ul>
 						<li><a href="/">Início</a></li>
@@ -74,13 +76,13 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<div class="row">
-						<div class="col-4">
-    						<img src="{% static "images/logo-facebook.png" %}" style="width: 50%"/>
+						<div class="col-4 col-12-small">
+    						<img src="{% static "images/logo-white-compact.svg" %}" style="width: 50%"/>
   						</div>
-				  		<div class="col-4">
-				    		<img src="{% static "images/LOGO-DETI.png" %}" style="width: 80%"/>	
+				  		<div class="col-4 col-12-small">
+				    		<img src="{% static "images/LOGO-DETI.png" %}" style="width: 60%"/>	
 				  		</div>
-						<div class="col-4">
+						<div class="col-4 col-12-small">
 						    <img src="{% static "images/logo_ufc.png" %}" style="width: 100%"/>
 						</div>
 					</div>
