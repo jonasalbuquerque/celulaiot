@@ -9,10 +9,10 @@ def index(request):
     return render(request, 'noticias/index.html', {})
 
 def apresentacao(request):
-	return render(request, 'noticias/apresentacao.html', {})
+	return render(request, 'noticias/soon.html', {})
 
 def cursos(request):
-	return render(request, 'noticias/cursos.html', {})
+	return render(request, 'noticias/soon.html', {})
 
 def projetos(request):
-	return render(request, 'noticias/projetos.html', {})
+	return render(request, 'noticias/soon.html', {})

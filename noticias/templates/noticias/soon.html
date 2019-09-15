@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Célula de IoT - UFC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="{% static "images/favicon.ico" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/main.css" %}"/>
+		<link rel="stylesheet" href="{% static "assets/css/style.css" %}"/>
+		<noscript><link rel="stylesheet" href="{% static "assets/css/noscript.css" %}"/></noscript>
+	</head>
+	<body>
+		<div id="wrapper">
+			<section id="intro" class="wrapper style1 fullscreen fade-up">
+				<!-- particles.js container --> 
+				<div id="particles-js"></div> 
+				<div id="home-title" class="inner">
+					<h1>EM BREVE</h1>
+					<img src="{% static "images/logo-color-white.svg" %}" style="opacity: 0.5; width: 80%">
+				</div>
+				<ul class="actions fixed" >
+					<li id="scroll-li"><a href="/" class="button primary">VOLTAR</a></li>
+				</ul>
+			</section>
+		</div>
+		<!-- Scripts -->
+		<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+		<script src="{% static "assets/js/particles.js" %}"></script> 
+		<script src="{% static "assets/js/app.js" %}"></script>
+	</body>
+</html>
